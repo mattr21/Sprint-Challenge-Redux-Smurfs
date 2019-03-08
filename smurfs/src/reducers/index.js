@@ -73,7 +73,7 @@ const rootReducer = (state = initialState, action) => {
   case DELETE_SMURF_SUCCESS:
     return {
       ...state,
-      notes: state.smurfs.filter(smurf => smurf.id !== action.payload),
+      smurfs: state.smurfs.filter(smurf => smurf.id !== action.payload),
       deletingSmurf: false
     };
   case DELETE_SMURF_FAIL:
