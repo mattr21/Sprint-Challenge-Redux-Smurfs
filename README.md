@@ -25,7 +25,9 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
 Actions: hold data that are passed to reducers to update state with
+
 Reducers: recieve data and update the state according to the logic added
+
 Store: holds application state. Single source of truth is the idea that there's only one version of the state so anything referencing it gets the same thing.
 
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
