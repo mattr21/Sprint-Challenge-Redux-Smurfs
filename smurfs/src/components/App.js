@@ -70,7 +70,7 @@ class App extends Component {
             onChange={this.changeHandler}
             required
           />
-          <button style={{ color: "green", cursor: "pointer" }} >Add Smurf</button>
+          <button style={{ color: "green", cursor: "pointer", marginLeft: '15px' }} >Add Smurf</button>
         </form>
         {this.props.smurfs.map(smurf => (
           <div style={{ backgroundColor: 'lightgrey', width: '200px', marginLeft: 'auto', marginRight: 'auto' }} >
