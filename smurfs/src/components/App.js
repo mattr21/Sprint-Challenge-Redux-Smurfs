@@ -6,7 +6,7 @@ import { getSmurfs, addSmurf } from '../actions';
 
 class App extends Component {
   state = {
-    smurf: {
+    smurf: { 
       name: '',
       age: '',
       height: '',
