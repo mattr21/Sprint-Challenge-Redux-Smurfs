@@ -70,13 +70,14 @@ class App extends Component {
             onChange={this.changeHandler}
             required
           />
-          <button>Add Smurf</button>
+          <button style={{ color: "green", cursor: "pointer" }} >Add Smurf</button>
         </form>
         {this.props.smurfs.map(smurf => (
-          <div>
-              <h3>{smurf.name}</h3>
-              <p>Age: {smurf.age} / Height: {smurf.height}</p>
-              <button onClick={() => this.props.deleteSmurf(smurf.id)}>Delete Smurf</button>
+          <div style={{ backgroundColor: 'lightgrey', width: '200px', marginLeft: 'auto', marginRight: 'auto' }} >
+              <h3 style={{ paddingTop: '15px' }}>{smurf.name}</h3>
+              <p>Age: {smurf.age} </p> 
+              <p>Height: {smurf.height}</p>
+              <button style={{ color: "red", cursor: "pointer" }} onClick={() => this.props.deleteSmurf(smurf.id)}>Delete Smurf</button>
               <br/><br/>
           </div>
         ))}
